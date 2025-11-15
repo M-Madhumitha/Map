@@ -2,20 +2,47 @@
     margin: 0;
     padding: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+.maptext{
+    font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+}
 body{
     background-color: black;
 }
-.header{
+::placeholder,.searchbtn,.directions{
+    font-family: Arial,  sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+.header {
     width: auto;
-    height: 100px;
-    background-color: rgb(230, 235, 81);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(96, 59, 4);
+}
+.h1{
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 .maplogo{
-    width: 70px;
+    width: 30px;
+}
+.m1,.m2{
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 .ic{
-    width: 30px;
-    height: 30px;
+    position: relative;
+    right:40px;
+    width: 35px;
+    height: 35px;
     border-radius: 100px;
     border: none;
     background-color: orange;
@@ -24,39 +51,37 @@ body{
     outline: none;
     width: 250px;
     border-radius: 20px;
-    height: 30px;
+    height: 35px;
     border: 1px solid orange;
     padding-left: 15px;
 }
 .maptext{
-    font-size: 60px;
-    margin-left: 230px;
+    font-size: 30px;
+    color: white;
 }
 .header{
     display: flex;
     padding-left: 50px;
-    padding-right: 50px;
-    justify-content: space-between;
-    align-items: center;
+    padding-right: 50px;  
 }
 .fa-solid{
     color: white;
     border: none;
     outline: none;
 }
-.fromtex{
-    color:rgb(230, 235, 81) ;
-    margin-bottom: 15px;
-}
+
 .from, .to{
     outline: none;
     width: 250px;
     padding-left: 20px;
     height: 35px;
-    margin-bottom: 30px;
     border-radius: 20px;
-    background-color: rgb(220, 217, 217);
-    border: 1px solid orange ;
+    border: 1px solid rgb(245, 151, 27) ;
+}
+.m{
+    display: flex;
+    padding-left: 80px;
+    gap: 20px;
 }
 .main{
     width: 320px;
@@ -70,12 +95,25 @@ body{
 }
 .searchbtn{
     width: 80px;
-    height: 30px;
-    margin-left: 90px;
+    height: 35px;
     border-radius: 30px;
+    margin-right: 80px;
     border: none;
-    background-color: rgb(230, 235, 81);
+    background-color: orange;
+    color: white;
 }
 .pushing{
-    margin-top: 50px;
+    width: 80%;
+    padding-top: 60px;
+    padding-left: 150px;
+}
+#share{
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: orange;
+    position:absolute;
+    top: 20px;
+    right: 20px;
 }
